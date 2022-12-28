@@ -3,7 +3,7 @@ Api que faz webscraping do openfoodfacts.org feita para o desafio backend da Coo
 
 # Como instalar: 
 O projeto pode ser executado pelo IIS Express com a url já definida pela porta SSL no launch.settings. O banco de dados é SQL e local, com um projeto 
-de banco SQL na solução, incluíndo um arquivo para a publicação/criação do banco de dados na máquina local. Deve ser necessário apenas alterar a 
+de banco SQL na solução, incluíndo um arquivo publish.xml para a publicação/criação do banco de dados na máquina local. Deve ser necessário apenas alterar a 
 connection strings dentro do appsettings.json. O projeto possui um Dockerfile que pode ser usado para criar uma imagem, porém não possui como criar 
 o banco de dados no docker para o projeto ser totalmente funcional pelo docker.
 
