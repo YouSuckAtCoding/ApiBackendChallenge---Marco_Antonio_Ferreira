@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  apibackendchallenge:
+    image: ${DOCKER_REGISTRY-}apibackendchallenge
+    build:
+      context: .
+      dockerfile: ApiBackendChallenge/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  db:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    ports:
+         - "1433:1433"
+
+    environment:
+         SA_PASSWORD: "backendchallengepassword"
+         ACCEPT_EULA: "Y"
+
+
+
+
+
+
+
